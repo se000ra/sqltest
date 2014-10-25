@@ -18,6 +18,7 @@ with sqlite3.connect('new.db') as connection:
             SELECT population.city, population.population, regions.region
             FROM population, regions
             WHERE population.city = regions.city
+            ORDER BY population.city ASC
             """)
 
 
